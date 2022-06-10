@@ -1,24 +1,80 @@
-# README
+# ORACLE-BOOKING-API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+> This is the backend for the [Oracle Booking app]() web application for
 
-* Ruby version
+### Deployment
 
-* System dependencies
+## Built With
 
-* Configuration
+- Rails
+- Ruby 
+- Postgresql
+- JWT
+- ActiveRecord Serializer
+- ActiveRecord Image Uploader
+- Heroku
 
-* Database creation
+## Getting Started
 
-* Database initialization
+Here are the steps to follow in order to get this project on your local computer.
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+`rails v7.0.2 +`
 
-* Deployment instructions
+`ruby v3.0.2 +`
 
-* ...
+### Setup
+
+clone this repo by typing `git clone `
+
+### Install
+
+install the dependencies by typing `bundle install`
+
+### Usage
+
+start the local server by running `rails s`
+
+### Testing
+
+run the tests by typing `bundle exec rspec`
+
+
+### Documentation
+
+
+## Author
+
+👤 **Victor Barh**
+
+- GitHub: [@Vvic778](https://github.com/vic778)
+- Twitter: [@victoirBarh](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
+
+👤 **Ricky Mormor**
+
+- GitHub: [@cwaku](https://github.com/cwaku)
+- Twitter: [@rickymormor](https://twitter.com/rickymormor)
+- LinkedIn: [Ricky Mormor](https://github.com/cwaku/blog/blob/develop/www.linkedin.com/in/rickymormor)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+ N/A
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+
