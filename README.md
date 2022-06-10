@@ -27,7 +27,7 @@ Here are the steps to follow in order to get this project on your local computer
 
 ### Setup
 
-clone this repo by typing `git clone `
+clone this repo by typing `git clone https://github.com/vic778/Oracle-booking-API.git`
 
 ### Install
 
