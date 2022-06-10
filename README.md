@@ -1,7 +1,7 @@
 # ORACLE-BOOKING-API
 
 
-> This is the backend for the [Oracle Booking app]() web application for
+> This is the backend for the [Oracle Booking app](https://github.com/afizsavage/oracle-booking) web application for
 
 ### Deployment
 
@@ -21,9 +21,9 @@ Here are the steps to follow in order to get this project on your local computer
 
 ### Prerequisites
 
-`rails v7.0.2 +`
+`rails v7.0.3 +`
 
-`ruby v3.0.2 +`
+`ruby v3.1.2 +`
 
 ### Setup
 
