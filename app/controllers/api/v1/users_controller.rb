@@ -23,7 +23,7 @@ class Api::V1::UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      render json: { success: true, messsage: "User updated successfully" }, status: :created
+      render json: { success: true, messsage: "User updated successfully", user: @user }, status: :created
     else
       render json: { success: false, message: @user.errors.full_messages }, status: :bad_request
     end
@@ -44,6 +44,6 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def user_params
-    params.permit(:name, :email, :password, :password_confirmation)
+    params.permit(:name, :email, :profile_picture, :password, :password_confirmation)
   end
 end
