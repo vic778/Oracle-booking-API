@@ -8,6 +8,14 @@ Rails.application.routes.draw do
       put 'users/:id', to: 'users#update'
       delete 'users/:id', to: 'users#destroy'
     end
+
+    namespace :v2 do
+      get 'cars', to: 'cars#index'
+      get 'cars/:id', to: 'cars#show'
+      post 'cars/new', to: 'cars#create'
+      put 'cars/:id', to: 'cars#update'
+      delete 'cars/:id', to: 'cars#destroy'
+    end
   end
  
 end
