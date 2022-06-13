@@ -15,6 +15,11 @@ Rails.application.routes.draw do
       post 'cars/new', to: 'cars#create'
       put 'cars/:id', to: 'cars#update'
       delete 'cars/:id', to: 'cars#destroy'
+
+      post 'favorites', to: 'favorites#create'
+      delete 'favorites/:id', to: 'favorites#destroy'
+
+      get 'my_favorites', to: 'my_favorites#index'
     end
   end
  
