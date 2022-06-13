@@ -5,7 +5,7 @@ class Api::V2::CarsController < ApplicationController
   def index
     @cars = Car.all
     if @cars
-    render json: @cars 
+      render json: @cars
     else
       render json: { success: false, message: "[]" }, status: :not_found
     end
@@ -13,7 +13,7 @@ class Api::V2::CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
-    render json: @car 
+    render json: @car
   end
 
   def create
@@ -36,12 +36,13 @@ class Api::V2::CarsController < ApplicationController
   end
 
   def destroy
-   if @car = @user.cars.find_by(id: params[:id])
+    if @car = @user.cars.find_by(id: params[:id])
       if @car.favorite == false
         @car.destroy
         render json: { success: true, message: "Car deleted successfully" }, status: :ok
       else
-        render json: { success: false, message: "This car is favorited by someone else" }, status: :unprocessable_entity
+        render json: { success: false, message: "This car is favorited by someone else" },
+               status: :unprocessable_entity
       end
     else
       render json: { success: false, message: "Only the owner can delete this car" }, status: :not_found
