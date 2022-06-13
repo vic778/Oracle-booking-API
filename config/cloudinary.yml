@@ -1,18 +1,29 @@
-  development:
-    cloud_name: "name"
-    api_key: "api_key"
-    api_secret: "api_sec"
-    secure: true
+  # development:
+  #   cloud_name: "name"
+  #   api_key: "api_key"
+  #   api_secret: "api_sec"
+  #   secure: true
 
-  production:
-    cloud_name: "name"
-    api_key: "api_key"
-    api_secret: "api_sec"
-    secure: true
+  # production:
+  #   cloud_name: "name"
+  #   api_key: "api_key"
+  #   api_secret: "api_sec"
+  #   secure: true
   
-  test:
-    cloud_name: "name"
-    api_key: "api_key"
-    api_secret: "api_sec"
-    secure: true
+  # test:
+  #   cloud_name: "name"
+  #   api_key: "api_key"
+  #   api_secret: "api_sec"
+  #   secure: true
     
+    development: 
+      cloud_name: "dltnxl5mu"
+      api_key: "939415923623522"
+      api_secret: "Y0ju27d-okZsnplWYSeDIQrCiYQ"
+      secure: true
+
+    production:
+      cloud_name: "dltnxl5mu"
+      api_key: "939415923623522"
+      api_secret: "Y0ju27d-okZsnplWYSeDIQrCiYQ"
+      secure: true
