@@ -274,8 +274,5 @@ DEPENDENCIES
   rubocop
   tzinfo-data
 
-RUBY VERSION
-   ruby 3.0.3p157
-
 BUNDLED WITH
-   2.3.15
+   2.3.14

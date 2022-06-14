@@ -5,6 +5,8 @@
 
 ### Deployment
 
+Base url: `https://immense-bayou-40869.herokuapp.com/`
+
 ## Built With
 
 - Rails
