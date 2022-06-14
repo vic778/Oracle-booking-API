@@ -1,5 +1,5 @@
 class Api::V2::CarsController < ApplicationController
-  before_action :authorized
+  before_action :authorized, except: %i[index show]
   before_action :set_car, only: %i[update]
 
   def index
