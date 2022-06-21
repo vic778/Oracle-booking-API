@@ -7,6 +7,5 @@ FactoryBot.define do
     image { Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/spec/support/image.png')), 'image/png') }
 
     association :user, factory: :user
-
   end
 end

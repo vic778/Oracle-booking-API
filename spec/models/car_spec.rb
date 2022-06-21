@@ -39,5 +39,4 @@ RSpec.describe Car, type: :model do
     @car.image = nil
     expect(@car).to_not be_valid
   end
-
 end

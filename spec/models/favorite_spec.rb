@@ -10,5 +10,5 @@ require 'rails_helper'
 #   it "is valid with valid attributes" do
 #     expect(@favorite).to be_valid
 #   end
-  
+
 # end
