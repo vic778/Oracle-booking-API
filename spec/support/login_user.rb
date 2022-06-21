@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe "Api::V1::Sessions", type: :request do
   describe "GET /api/v1/authentications" do
     before(:each) do

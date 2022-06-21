@@ -17,13 +17,13 @@ class Api::V1::UsersController < ApplicationController
       token = encode_token({ user_id: @user.id })
       render json: { success: true, messsage: "User created successfully" }, status: :created
     else
-      render json: { success: false, message: @user.errors.full_messages }, status: :bad_request
+      render json: { success: false, message: @user.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
   def update
     if @user.update(user_params)
-      render json: { success: true, messsage: "User updated successfully", user: @user }, status: :created
+      render json: { success: true, messsage: "User updated successfully", user: @user }, status: :ok
     else
       render json: { success: false, message: @user.errors.full_messages }, status: :bad_request
     end
