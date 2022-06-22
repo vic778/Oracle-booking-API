@@ -31,7 +31,7 @@ class Api::V1::UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      render json: { success: true, messsage: "User deleted successfully" }, status: :created
+      render json: { success: true, messsage: "User deleted successfully" }, status: :ok
     else
       render json: { success: false, message: @user.errors.full_messages }, status: :bad_request
     end
