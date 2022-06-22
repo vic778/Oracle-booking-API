@@ -1,32 +1,46 @@
 require 'rails_helper'
-require_relative './sessions_spec'
 
 RSpec.describe "Api::V1::Users", type: :request do
-  describe "GET /api/v1/users" do
-    before(:each) do
-      user_params = {
-        name: 'Victor',
-        email: 'barhvictor@gmail.com',
-        password: '123456',
-        password_confirmation: '123456'
-      }
-      post '/api/v1/users/register', params: user_params
+ describe "POST /api/v1/users/register " do
+        it "creates a new user" do
+            @user = FactoryBot.build(:user)
+            post "/api/v1/users/register", params: { name: @user.name, email: @user.email, password: @user.password, password_confirmation: @user.password_confirmation } 
+            expect(response).to have_http_status(:created)
+            expect(response.body).to include("User created successfully")
+        end
+
+        it "return all users" do
+            @user = FactoryBot.create(:user)
+            get "/api/v1/users"
+            expect(response).to have_http_status(:ok)
+        end
     end
 
-    it "returns http success" do
-      get '/api/v1/users', headers: { Authorization: @token }
-      expect(response).to have_http_status(:success)
-    end
-  end
+    describe "GET /api/v1/users/:id" do
+       before(:each) do
+        @user = FactoryBot.create(:user)
+        post "/api/v1/auth/login", params: { email: @user.email, password: @user.password }
+        @token = JSON.parse(response.body)["token"]
+        @headers = { "Authorization": "Bearer #{@token}" }
+       end
 
-  context "logs a user a" do
-    scenario "he can update his profile" do
-      user = build(:user)
-      user.save
-      post '/api/v1/auth/login', params: { email: user.email, password: user.password }
-      put '/api/v1/users/1', params: { name: "Vi" }, headers: { Authorization: @token }
+        it "returns a user" do
+            get "/api/v1/users/#{@user.id}", headers: @headers
+            expect(response).to have_http_status(:ok)
+        end
 
-      expect(response).to have_http_status(:success)
+        it "updates a user" do
+            put "/api/v1/users/#{@user.id}", 
+            params: { name: @user.name, email: @user.email, password: @user.password, password_confirmation: @user.password_confirmation }, headers: @headers
+            expect(response).to have_http_status(:ok)
+        end
+
+        it "deletes a user" do
+            delete "/api/v1/users/#{@user.id}", headers: @headers
+            expect(response).to have_http_status(:ok)
+        end
+
     end
-  end
+
+
 end
