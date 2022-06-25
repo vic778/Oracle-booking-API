@@ -15,6 +15,7 @@
 - JWT
 - ActiveRecord Serializer
 - ActiveRecord Image Uploader
+- Cloudinary
 - Heroku
 
 ## Getting Started
