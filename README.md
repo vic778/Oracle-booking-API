@@ -1,24 +1,83 @@
-# README
+# ORACLE-BOOKING-API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+> This is the backend for the [Oracle Booking app](https://github.com/afizsavage/oracle-booking) web application for
 
-* Ruby version
+### Deployment
 
-* System dependencies
+[Base url](https://gentle-springs-58920.herokuapp.com/)
 
-* Configuration
+## Built With
 
-* Database creation
+- Rails
+- Ruby 
+- Postgresql
+- JWT
+- ActiveRecord Serializer
+- ActiveRecord Image Uploader
+- Cloudinary
+- Heroku
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+Here are the steps to follow in order to get this project on your local computer.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Prerequisites
 
-* Deployment instructions
+`rails v7.0.3 +`
 
-* ...
+`ruby v3.1.2 +`
+
+### Setup
+
+clone this repo by typing `git clone https://github.com/vic778/Oracle-booking-API.git`
+
+### Install
+
+install the dependencies by typing `bundle install`
+
+### Usage
+
+start the local server by running `rails s`
+
+### Testing
+
+run the tests by typing `bundle exec rspec`
+
+
+### Documentation
+
+
+## Author
+
+👤 **Victor Barh**
+
+- GitHub: [@Vvic778](https://github.com/vic778)
+- Twitter: [@victoirBarh](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
+
+👤 **Ricky Mormor**
+
+- GitHub: [@cwaku](https://github.com/cwaku)
+- Twitter: [@rickymormor](https://twitter.com/rickymormor)
+- LinkedIn: [Ricky Mormor](https://github.com/cwaku/blog/blob/develop/www.linkedin.com/in/rickymormor)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+ N/A
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+

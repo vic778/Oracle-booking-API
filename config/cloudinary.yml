@@ -1,0 +1,17 @@
+  development:
+    cloud_name: "victorbarh"
+    api_key: "893546862154776"
+    api_secret: "Oko75CZQLY6h26gRTpGF1AawQlc"
+   
+
+  production:
+    cloud_name: "victorbarh"
+    api_key: "893546862154776"
+    api_secret: "Oko75CZQLY6h26gRTpGF1AawQlc"
+
+  
+  test:
+    cloud_name: "victorbarh"
+    api_key: "893546862154776"
+    api_secret: "Oko75CZQLY6h26gRTpGF1AawQlc"
+  
